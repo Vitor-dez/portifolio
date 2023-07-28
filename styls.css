@@ -1,0 +1,1038 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.caixa-principal {
+
+    height: 103vh;
+    background: rgb(11, 42, 199);
+    background: linear-gradient(180deg, rgba(11, 42, 199, 1) 0%, rgba(5, 18, 88, 1) 34%, rgba(0, 0, 0, 1) 75%);
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+
+}
+
+.portifolio {
+    color: beige;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+}
+
+.portifolio span {
+    color: #0af3cc;
+}
+
+
+.navbar {
+    height: 60px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+.navbar li {
+
+    list-style: none;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+
+.navbar ul li a {
+    position: relative;
+    height: 120px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar ul li a i {
+    color: rgb(11, 42, 199);
+    font-size: 25px;
+    position: absolute;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.activeIcon {
+    opacity: 0;
+    transition: all 0.6s ease;
+    transition-delay: 0.2s;
+}
+
+.navbar ul li.active-list a i {
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    width: 16px;
+    height: 15px;
+    background: rgb(11, 22, 199, 1);
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 15%;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 0 rgb(11, 22, 199);
+    ;
+
+}
+
+.indicator::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 15%;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 10px 0 rgb(11, 22, 199);
+}
+
+.meu-nome {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+
+}
+
+.brain {
+    position: relative;
+    width: 100px;
+    bottom: 150px;
+    left: 430px;
+}
+
+
+.caixa-t {
+    height: 20px;
+    width: 50px;
+    margin-bottom: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologias {
+    width: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 230px;
+}
+
+.tecnologias:hover {
+    cursor: pointer;
+    transition: 5s;
+    transform: scale(1.07);
+    border-radius: 50px;
+    transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 15px 15px #0af3cc;
+
+}
+
+
+h1 {
+    color: white;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.973) 0.2em 0.1em 0.2em;
+}
+
+h3 {
+    text-shadow: #000000;
+
+}
+
+.meu-nome span {
+    color: #0af3cc;
+}
+
+.meu-nome h3 {
+    width:280px;
+    color: white;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fond {
+    position: relative;
+    width: 200px;
+    bottom: 550px;
+    left: 45px;
+    ;
+}
+
+
+section {
+    height: 112vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 15%;
+    background-color: #000000;
+}
+
+.fotom {
+    height: 400px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(5, 90, 129);
+}
+
+
+
+.Sobre {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 3s;
+    filter: blur(0);
+}
+
+section img:hover {
+    border: 2px solid #0af3cc;
+    transition: 0.5s;
+
+}
+
+.infor h2 {
+    color: #0af3cc;
+    font-size: 60px;
+}
+
+.in {
+    font-size: 19px;
+}
+
+section p {
+    width: 100%;
+    color: #f1f1f1;
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+
+div button {
+    color: white;
+    background: #1f303f;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+
+
+}
+
+div button:hover {
+    background-color: black;
+    border: 1px solid #00f9e4;
+    transition: 0.5s;
+
+}
+
+.curri {
+    margin-top: 10px;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+.end-reco {
+    text-decoration: none;
+    color: white;
+
+}
+
+.projetos {
+    width: 100%;
+    height: 155vh;
+    background: rgb(11, 42, 199);
+    background: linear-gradient(0deg, rgba(11, 42, 199, 1) 0%, rgba(11, 42, 199, 1) 24%, rgba(0, 0, 0, 1) 100%);
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.973) 0.4em 0.4em 0.4em;
+}
+
+
+.projetos span {
+    color:  #00f9e4;
+    text-shadow: #030303 0.1em 0.2em 0.1em;
+}
+
+.card {
+    background-color: #0505059d;
+    margin-bottom: 50px;
+    height: 355px;
+    width: 260px;
+    border: solid 1px #00f9e4;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+
+}
+
+.card:hover {
+    background: #150b4180;
+    opacity: 5;
+    transition: 5s;
+    transform: scale(1.07);
+    transition: 0.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 15px 15px black;
+
+}
+
+.card img {
+    height: 100px;
+    border-radius: 50px;
+}
+
+.card h5 {
+    color: white;
+    font-size: 24px;
+    margin-top: 14px;
+}
+
+.card p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    word-spacing: 5px;
+
+}
+
+.card a{
+   position: relative;
+   top: -10px;
+    background-color: #1f303f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+ 
+
+}
+
+.card a:hover {
+    background-color: #000000;
+    border: solid 1px #00f9e4;
+
+}
+
+.bt{
+    position: relative;
+    display: block;
+    right: -50px;
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 12px;
+ 
+}
+
+.trabalhos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.tempo {
+    border-radius: 50%;
+
+}
+
+.impm {
+    border-radius: 50px;
+}
+
+
+
+footer {
+    background: rgb(11, 42, 199);
+    background: linear-gradient(180deg, rgba(11, 42, 199, 1) 0%, rgba(6, 24, 111, 1) 52%, rgba(0, 0, 0, 1) 100%);
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2px;
+}
+
+footer h5 {
+    color:  #00f9e4;
+    font-size: 30px;
+
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.social img {
+    height: 20px;
+    border-radius: 50%;
+}
+
+.social {
+    display: flex;
+    gap: 5px;
+}
+
+.social a {
+    background-color: #000000;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+}
+
+.social a :hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+
+}
+
+
+
+.typeanimation {
+    animation: blinckcursor 600ms infinite normal, type-1 4s steps(50) 1s normal;
+    border-right: 2px solid rgb(20, 231, 214 ) ;
+    
+
+}
+
+
+
+
+@keyframes type-1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12em;
+    }
+}
+
+@keyframes blinckcursor {
+    from {}
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 1108px) {
+
+    .infor h2 {
+
+        font-size: 40px;
+        white-space: nowrap;
+    }
+
+    
+.projetos {
+    height: 177vh;
+}
+
+    .tecnologias {
+        position: relative;
+        margin-top: 100px;
+        left: 100px;
+
+    }
+}
+
+@media screen and (max-width: 957px) {
+
+
+
+    .brain {
+        position: absolute;
+        width: 70px;
+        left: 355px;
+        bottom: 150px;
+    }
+
+
+    .meu-nome h1 {
+        bottom: 100px;
+        font-size: 60px;
+        position: relative;
+        right: 90px;
+    }
+
+    .meu-nome h3 {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .tecnologias {
+        position: relative;
+        margin-top: 100px;
+        left: 100px;
+
+    }
+
+
+    .projetos {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 821px) {
+
+
+
+    .brain {
+        position: absolute;
+        width: 70px;
+        left: 355px;
+        bottom: 150px;
+    }
+
+
+    .meu-nome h1 {
+        bottom: 100px;
+        font-size: 60px;
+        position: relative;
+        right: 90px;
+    }
+
+    .meu-nome h3 {
+        position: relative;
+        bottom: 100px;
+    }
+
+
+    .tecnologias {
+       margin-bottom: 150px;
+
+    }
+
+    .fotom {
+
+        height: 300px;
+        position: relative;
+        margin-left: -100px;
+
+    }
+
+    .infor {
+        width: 200px;
+    }
+
+.projetos{
+    height: 100vh;
+}
+
+
+    .card {
+        width: 230px;
+        height: 300;
+    }
+   
+ .bt{
+    width: 100px;
+    right: -30px;
+ }
+}
+
+@media screen and (max-width: 719px) {
+
+    .brain {
+        position: absolute;
+        left: 280px;
+    }
+
+    .meu-nome h1 {
+        font-size: 50px;
+        bottom: 100px;
+    }
+
+    .meu-nome h3 {
+        position: relative;
+        right: 70px;
+    }
+
+    .tecnologias {
+        margin-bottom: 75px;
+    }
+
+    .projetos {
+        height: 110vh;
+    }
+
+
+
+    .card {
+        width: 200px;
+        height: 300px;
+        font-size: 10px;
+
+    }
+
+    .card h5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 617px) {
+
+
+    .portifolio {
+       position: relative;
+        font-size: 30px;
+       bottom: 10px;
+     
+    }
+
+    .navbar {
+        position: absolute;
+        width: 30%;
+        right: 20px;
+        height: 0px;
+        top: 95px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+.navbar ul li a i {
+    margin-bottom: 55px;
+    top: 50px;
+
+}
+
+#nav.active .navbar {
+    width: 70%;
+    height: 70px;
+    right: 54px;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+
+.indicator {
+    display: none;
+}
+#btn-mobile{
+    position: relative;
+    left: 50px;
+}
+#btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1em;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+    
+}
+
+#hamburger {
+    border-top: 2px solid;
+    width: 20px;
+}
+
+#hamburger::after,
+#hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+transition: .3s;
+position: relative;
+
+}
+
+
+#nav.active #hamburger{
+    border-top-color:transparent ;
+}
+
+
+
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+
+
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+
+.brain {
+    position: absolute;
+    width: 50px;
+    left: 280px;
+    bottom: 150px;
+}
+
+
+.meu-nome h1 {
+    bottom: 100px;
+    font-size: 50px;
+    position: relative;
+    right: 90px;
+}
+
+.meu-nome h3 {
+    position: relative;
+    bottom: 100px;
+}
+
+.tecnologias {
+    margin-bottom: 100px;
+}
+
+
+
+.infor {
+    font-size: 20px;
+}
+
+
+.projetos {
+    height: 395vh;
+}
+
+
+
+.trabalhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 590px) {
+
+    .caixa-principal ul li {
+        font-size: 15px;
+        margin-right: 9px;
+
+    }
+
+
+    .brain {
+        left: 250px;
+        bottom: 140px;
+    }
+
+    .meu-nome h1 {
+        position: relative;
+        left: -50px;
+        font-size: 40px;
+    }
+
+    .meu-nome h3 {
+        position: relative;
+        left: -50px;
+        font-size: 20px;
+    }
+
+    .tecnologias {
+        position: relative;
+        width: 40px;
+        left: 50px;
+
+    }
+
+    
+.meu-nome h3 {
+    width: 225px;
+}
+
+
+    .infor h2 {
+        font-size: 25px;
+    }
+
+    .infor p {
+        font-size: 15px;
+    }
+
+    .infor button {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .trabalhos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .trabalhos img{
+width: 60px;
+height: 60px;
+    }
+
+    .projetos {
+        height: 320vh;
+    }
+    .projetos h5{
+        position: relative;
+        top: 10px;
+    }
+
+    .bt{
+        position: relative;
+        width: 70px;
+       top: 5px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 489px) {
+
+
+    .caixa-principal ul li {
+        font-size: 10px;
+        margin-right: 9px;
+    }
+
+    .brain {
+        width: 50px;
+        left: 185px;
+        bottom: 120px;
+    }
+
+    .meu-nome h1 {
+
+        font-size: 30px;
+        left: -35px;
+    }
+
+    .meu-nome h3 {
+        font-size: 12px;
+        left: 12px;
+    }
+
+
+    .caixa-t {
+        height: 20px;
+        margin-top: -50px;
+        margin-left: 20px;
+    }
+
+    .fotom {
+        width: 150px;
+        height: 180px;
+    }
+
+    .infor {
+        margin-top: 70px;
+        margin-left: -30px;
+    }
+
+    .infor button {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .end-reco {
+        width: 40px;
+    }
+
+
+    .trabalhos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card {
+        width: 250px;
+        height: 300px;
+
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 438px) {
+
+    .contact {
+        margin-left: -20px;
+        margin-bottom: 30px;
+    }
+
+
+    .caixa-principal ul li {
+        font-size: 10px;
+
+    }
+
+    .caixa-t {
+        margin-top: -240px;
+        margin-left: 20px;
+    }
+
+    
+.projetos {
+    height: 290vh;
+}
+
+    #nav.active .navbar {
+        width: 90%;
+        height: 70px;
+     left: 10px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .bt{
+        width: 80px;
+        right: -50px;
+     }
+}
+
+@media screen and (max-width: 385px) {
+
+
+    .caixa-principal ul li {
+
+        display: block;
+        padding: 2px;
+
+    }
+
+
+    .brain {
+        width: 45px;
+        left: 170px;
+        bottom: 130px;
+    }
+
+    .meu-nome h1 {
+        font-size: 30px;
+        left: -50px;
+    }
+
+    .meu-nome h3 {
+        font-size: 15px;
+        left: -50px;
+    }
+
+
+    .projetos {
+        height: 355vh;
+    }
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+
+    .projetos {
+        height: 355vh;
+    }
+
+}
