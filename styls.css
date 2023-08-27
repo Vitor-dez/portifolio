@@ -243,7 +243,9 @@ section img:hover {
     transition: 0.5s;
 
 }
-
+.infor{
+    width:200vh;
+}
 .infor h2 {
     color: #0af3cc;
     font-size: 60px;
