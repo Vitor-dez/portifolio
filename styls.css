@@ -37,7 +37,7 @@ nav {
 
 
 .navbar {
-    height: 60px;
+    height: 40px;
     width: 350px;
     background-color: white;
     border-radius: 10px;
@@ -667,7 +667,6 @@ footer p {
         position: absolute;
         width: 30%;
         right: 20px;
-        height: 0px;
         top: 95px;
         transition: .6s;
         visibility: hidden;
@@ -826,27 +825,41 @@ position: relative;
     .tecnologias {
         position: relative;
         width: 40px;
-        left: 50px;
+        top: 250px;
 
     }
 
     
-.meu-nome h3 {
-    width: 225px;
+.infor{
+    position: relative;
+    bottom: 150px;
+ 
 }
-
-
     .infor h2 {
         font-size: 25px;
     }
 
     .infor p {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .infor button {
-        width: 150px;
-        font-size: 15px;
+        width: 100px;
+        height: 27px;
+        font-size: 11px;
+    }
+    .fotom{
+        bottom: 150px;
+        left: 65px;
+    }
+
+    .Sobre{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .trabalhos {
@@ -914,8 +927,9 @@ height: 60px;
     }
 
     .fotom {
-        width: 150px;
-        height: 180px;
+        width: 230px;
+        height: 280px;
+       bottom: 50px;
     }
 
     .infor {
@@ -988,6 +1002,22 @@ height: 60px;
         width: 80px;
         right: -50px;
      }
+
+     .Sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+
+.infor h2{
+    padding: 10px;
+}
+
+    .tecnologias{
+      display: none;
+    }
+    
 }
 
 @media screen and (max-width: 385px) {
@@ -1017,17 +1047,41 @@ height: 60px;
         left: -50px;
     }
 
+    
+    .fotom {
+        width: 230px;
+        height: 280px;
+       top: 10px;
+    }
+
+
+    .infor h2 {
+        position: relative;
+        top: 50px;
+    }
+
+    
+    .infor p {
+        position: relative;
+        top: 50px;
+    }
+
+
+    .infor button {
+        position: relative;
+        width: 100px;
+        font-size: 12px;
+        top: 50px;
+    }
 
     .projetos {
         height: 355vh;
     }
 
-
 }
 
 
 @media screen and (max-width: 320px) {
-
 
 
     .projetos {
