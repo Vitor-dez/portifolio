@@ -34,15 +34,11 @@ const myObserv = new IntersectionObserver( (entries) =>{ // função de interaç
 entries.forEach ((entry)=>{
     if(entry.isIntersecting ){
         entry.target.classList.add('show')
-   
+    }else{
+        entry.target.classList.remove('show')
     }
 })
 })
 
-
-const elements = document.querySelectorAll('.Sobre')
-
-elements.forEach( (element ) => myObserv.observe(element))
-console.log(elements)
 
 
