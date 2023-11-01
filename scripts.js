@@ -29,16 +29,3 @@ btnMobile.addEventListener('click', toggleMenu);
 
 
 
-
-const myObserv = new IntersectionObserver( (entries) =>{ // função de interação da pagina Sobre mim. 
-entries.forEach ((entry)=>{
-   
-})
-})
-
-const elements = document.querySelectorAll('.Sobre')
-
-elements.forEach( (element ) => myObserv.observe(element))
-
-
-
