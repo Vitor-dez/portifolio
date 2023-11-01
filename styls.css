@@ -231,12 +231,6 @@ section {
     transition: all 3s;
 }
 
-.show {
-    opacity: 1;
-    transform: translateX(0);
-    transition: all 3s;
-    filter: blur(0);
-}
 
 section img:hover {
     border: 2px solid #0af3cc;
